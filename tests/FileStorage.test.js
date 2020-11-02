@@ -24,7 +24,7 @@ async function useTempFile(fn) {
     await fn(filePath);
   } catch (err) {}
 
-  return fs.promises.rm(filePath);
+  return fs.promises.unlink(filePath);
 }
 
 test('FileStorage.size() retrieves the number of items in storage', async () => {
