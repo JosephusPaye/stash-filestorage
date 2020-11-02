@@ -1,6 +1,6 @@
 {
   "name": "@josephuspaye/stash-filestorage",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple file-based cache storage for @josephuspaye/stash",
   "main": "dist/FileStorage.js",
   "types": "dist/FileStorage.d.ts",
