@@ -16,6 +16,11 @@ function sampleCachedValue(value = 42) {
   };
 }
 
+// Ensure that the `tests/temp` directory exists
+if (!fs.existsSync(path.join(__dirname, 'temp'))) {
+  fs.mkdirSync(path.join(__dirname, 'temp'));
+}
+
 async function useTempFile(fn) {
   const tempString = Math.random().toString(36).substr(2, 10);
   const filePath = path.join(__dirname, 'temp', 'cache.' + tempString);

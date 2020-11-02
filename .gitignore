@@ -1,4 +1,3 @@
 dist
 node_modules
-tests/temp/*
-!tests/temp/.gitkeep
+tests/temp
