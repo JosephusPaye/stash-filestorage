@@ -41,6 +41,15 @@ const stash = new Stash(
 
 ### `FileStorage` class
 
-A file-based storage backend for the cache. Cache data is serialized using [devalue](https://github.com/Rich-Harris/devalue) and written to file for persistence, using Node's `fs` APIs.
+A file-based storage backend for the cache.
+
+Cache data is serialized using [devalue](https://github.com/Rich-Harris/devalue) and written to file for persistence, using Node's `fs` APIs. That means it correctly handles:
+
+- cyclical references (`obj.self = obj`)
+- repeated references (`[value, value]`)
+- `undefined`, `Infinity`, `NaN`, `-0`
+- regular expressions
+- dates
+- `Map` and `Set`
 
 [MIT](LICENCE)
