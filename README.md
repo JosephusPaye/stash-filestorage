@@ -52,4 +52,6 @@ Cache data is serialized using [devalue](https://github.com/Rich-Harris/devalue)
 - dates
 - `Map` and `Set`
 
+## Licence
+
 [MIT](LICENCE)
