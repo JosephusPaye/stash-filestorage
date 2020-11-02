@@ -2,7 +2,7 @@
 
 ![Tests](https://github.com/JosephusPaye/stash-filestorage/workflows/Tests/badge.svg)
 
-🗃 Simple file-based cache storage for [@josephuspaye/stash](https://github.com/JosephusPaye/stash).
+🗃 Simple file-based cache storage for [@josephuspaye/stash](https://github.com/JosephusPaye/stash). This package provides a file storage backend for [@josephuspaye/stash](https://github.com/JosephusPaye/stash), for use in Node.js 10 or above.
 
 This project is part of [#CreateWeekly](https://twitter.com/JosephusPaye/status/1214853295023411200), my attempt to create something new publicly every week in 2020.
 
@@ -11,12 +11,6 @@ This project is part of [#CreateWeekly](https://twitter.com/JosephusPaye/status/
 ```
 npm install @josephuspaye/stash-filestorage --save
 ```
-
-## How it works
-
-This package provides a file storage backend for [@josephuspaye/stash](https://github.com/JosephusPaye/stash), for use in Node.js.
-
-Cache data is serialized using [devalue](https://github.com/Rich-Harris/devalue) and written to file for persistence.
 
 ## Usage
 
@@ -31,8 +25,9 @@ import { FileStorage } from '@josephuspaye/stash-filestorage';
 
 const stash = new Stash(
   new FileStorage({
-    bufferInMemory: true, // Speeds up read operations by keeping a copy of the cache in memory
+    // Speeds up read operations by keeping a copy of the cache in memory
     // set to `false` to disable (not recommended)
+    bufferInMemory: true,
     filePath: path.join(__dirname, 'cache.data'),
   })
 );
@@ -46,6 +41,6 @@ const stash = new Stash(
 
 ### `FileStorage` class
 
-A file-based storage backend for the cache. Cache data is serialized using [devalue](https://github.com/Rich-Harris/devalue) and written to file for persistence, using Node `fs` APIs.
+A file-based storage backend for the cache. Cache data is serialized using [devalue](https://github.com/Rich-Harris/devalue) and written to file for persistence, using Node's `fs` APIs.
 
 [MIT](LICENCE)
