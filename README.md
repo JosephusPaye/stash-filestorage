@@ -16,9 +16,6 @@ npm install @josephuspaye/stash-filestorage --save
 
 The following example shows how to use the file storage backend with Stash:
 
-<details>
-<summary>View example</summary>
-
 ```js
 import { Stash } from '@josephuspaye/stash';
 import { FileStorage } from '@josephuspaye/stash-filestorage';
@@ -34,8 +31,6 @@ const stash = new Stash(
 
 // use `stash` as normal...
 ```
-
-</details>
 
 ## API
 
