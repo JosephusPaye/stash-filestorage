@@ -2,7 +2,7 @@
 
 ![Tests](https://github.com/JosephusPaye/stash-filestorage/workflows/Tests/badge.svg)
 
-🗃 Simple file-based cache storage for [@josephuspaye/stash](https://github.com/JosephusPaye/stash). This package provides a file storage backend for [@josephuspaye/stash](https://github.com/JosephusPaye/stash), for use in Node.js 10 or above.
+🗃 Simple file-based cache storage for [@josephuspaye/stash](https://github.com/JosephusPaye/stash). This package provides a file storage backend for use in Node.js v10 or above.
 
 This project is part of [#CreateWeekly](https://twitter.com/JosephusPaye/status/1214853295023411200), my attempt to create something new publicly every week in 2020.
 
